@@ -11,8 +11,8 @@ body::before {
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('img/tokyo-bg_small.jpg') no-repeat center center;
     background-size: cover;
-    z-index: -1; /* Отправляем на задний план */
-    will-change: transform; /* Оптимизация для плавности */
+    z-index: -1; 
+    will-change: transform; 
 }
 
 body {
@@ -275,3 +275,4 @@ section {
   }
 
 }
+
