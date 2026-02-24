@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <title>Anime Flow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="../bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+
+
+<!-- <body class="bg-black text-white"> -->
+<body class="bg-black text-white" data-spy="scroll" data-target=".navbar" data-offset="80"> <!-- 🔧 ИЗМЕНЕНИЕ: добавлен ScrollSpy -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold d-flex align-items-center" href="#koti">
+
+                <div class="logo-icon-container mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-eye">
+                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <div class="logo-glow"></div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#koti">Koti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aikakaudet">Aikakaudet</a></li>
+
+                    <!-- <li class="nav-item dropdown">
+                       
+                        
+                        <a class="nav-link dropdown-toggle" href="#" id="eraDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Aikakaudet
+                        </a>
+
+                       
+                        <div class="dropdown-menu bg-dark" aria-labelledby="eraDropdown">
+                            <a class="dropdown-item text-light bg-dark" href="#aikakaudet">1910–1960</a>
+                            <a class="dropdown-item text-light bg-dark" href="#era-2">1980–1990</a>
+                            <a class="dropdown-item text-light bg-dark" href="#era-3">2000–nykyhetki</a>
+                        </div>
+                    </li> -->
+
+                    <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interaktiivisuus">Interaktiivisuus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#palaute">Palaute</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="koti" class="hero-simple d-flex align-items-center">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-2 font-weight-bold text-white">Anime Flow</h1>
+                <p class="h3 text-cyan mb-5">Sata vuotta tyyliä, tunnetta ja tarinoita</p>
+
+                <div class="hero-article">
+                    <h2 class="h4 text-white font-weight-bold mb-3">Mitä on anime?</h2>
+                    <p class="lead-text text-light">
+                        Anime ei ole pelkästään "japanilaisia piirrettyjä". Se on valtava kulttuurinen kerrostuma, 
+                        jolla on oma ainutlaatuinen visuaalinen kielensä. Animen juuret ulottuvat yli sadan 
+                        vuoden taakse, ja se on kehittynyt lyhyistä paperileikkausanimaatioista 
+                        monimutkaiseen tietokone-grafiikkaan.
+                    </p>
+                    <!-- <p class="text-muted small"> -->
+                    <p class="lead-text text-light">
+                        Nykyään anime on maailmanlaajuinen ilmaisun väline, joka vaikuttaa muotiin, 
+                        elokuvataiteeseen ja miljoonien ihmisten elämäntapaan. Se käsittelee teemoja, 
+                        jotka vaihtelevat lasten seikkailuista syvällisiin filosofisiin kysymyksiin.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                        
+                </div>
+
+                <a href="#aikakaudet" class="btn btn-outline-info btn-lg mt-4">Tutustu historiaan</a>
+                <!-- <a href="#era-2" class="btn btn-outline-info btn-lg mt-4">Seuraava aikakausi</a> -->
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- <div id="aikakaudet"> -->
+        <section id="aikakaudet" class="py-5">
+            <div class="container">
+        <!-- <section class="py-5">
+            <div class="container"> -->
+                <div class="row align-items-center">
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <img src="img/era_1.jpg" class="img-fluid rounded shadow-lg era-image" alt="Vintage Anime">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="text-uppercase">1910–1960</span>
+                        <h2 class="mb-4 font-weight-bold">Syntyhetket ja "Mangan jumala"</h2>
+                        <div class="cyan-divider mx-auto mb-3 text-left"></div>
+                        
+                        <p>Ensimmäiset kokeilut animaation parissa alkoivat Japanissa jo vuonna 1917, jolloin pioneerit kuten Shimokawa Oten loivat lyhyitä pätkiä liitutauluille ja paperille. Todellinen läpimurto tapahtui kuitenkin toisen maailmansodan jälkeen Osamu Tezukan myötä.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Astro Boy (Tetsuwan Atom)</h4>
+                        <p>Tezuka toi animaatioon elokuvallisia keinoja, kuten lähikuvia ja dynaamisia kameran liikkeitä, jotka ovat animen tunnusmerkkejä vielä tänäkin päivänä.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Kehitys</h4>
+                        <p>Tänä aikakautena syntyivät perusteet "rajoitetulle animaatiolle" (limited animation), joka mahdollisti korkealaatuisen tarinankerronnan pienemmällä ruutunopeudella. Tämä tyyli ei ollut vain säästökeino, vaan siitä muodostui animen oma, tunnistettava estetiikka, jossa painotetaan hahmojen ilmeitä ja tunnelmaa massiivisten liikkeiden sijaan.</p>
+                       
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                        
+                        <a href="#era-2" class="btn btn-outline-info btn-lg mt-4">Seuraava: 1980–1990</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="era-2" class="py-5">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                     <div class="col-md-6 mt-4 mt-md-0">
+                        <img src="img/era_2.webp" class="img-fluid rounded shadow-lg era-image" alt="Cyberpunk">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="text-uppercase">1980–1990</span>
+                        <h2 class="mb-4 font-weight-bold">Kultakausi ja länsimaiden valloitus</h2>
+
+                        <!-- <h2 class="display-4 font-weight-bold text-white">Kultakausi ja länsimaiden valloitus</h2> -->
+                        <div class="cyan-divider mx-auto mb-3 text-left"></div>
+                        
+                        <p>Tämä oli kokeilujen ja suurten budjettien aikaa, jolloin anime alkoi saavuttaa kansainvälistä mainetta. Japanin talouskuplan aikana studiot pystyivät tuottamaan teknisesti häikäiseviä teoksia.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Cyberpunk и scifi</h4>
+                        <p>Elokuvat kuten Akira (1988) ja Ghost in the Shell (1995) osoittivat länsimaiselle yleisölle, että animaatio voi olla suunnattu aikuisille ja käsitellä monimutkaisia teknologisia dystopioita.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Studio Ghibli</h4>
+                        <p>Hayao Miyazakin perustama studio loi mestariteoksia, jotka toivat animelle taiteellista arvostusta maailmanlaajuisesti.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Popkulttuurin nousu</h4>
+                        <p>Samaan aikaan sarjat kuten Sailor Moon ja Pokémon loivat perustan globaalille fanikulttuurille. Suomessa 80-luvun lopulla julkaistu Hopeanuoli (Silver Fang) oli merkittävä virstanpylväs, joka synnytti maahamme poikkeuksellisen varhaisen ja vahvan anime-yhteisön.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                        
+                        <a href="#era-3" class="btn btn-outline-info btn-lg mt-4">Seuraava: 2000–nykyhetki</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="era-3" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <img src="img/era_3.jpg" class="img-fluid rounded shadow-lg era-image" alt="Cyberpunk">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="text-uppercase">2000-luku – nykyhetki</span>
+
+                        <h2 class="mb-4 font-weight-bold">Nykykausi ja suoratoiston aikakausi</h2>
+
+                        
+                        <div class="cyan-divider mx-auto mb-3 text-left"></div>
+                        
+                        <p>Nykyään anime on miljardiluokan teollisuutta, ja sen saatavuus on helpompaa kuin koskaan. Digitaalinen vallankumous on muuttanut sekä tuotantoa että kuluttamista.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Visuaalinen loisto</h4>
+                        <p>Digitaalinen piirtäminen ja CGI ovat mahdollistaneet ennennäkemättömän yksityiskohtaiset maailmat. Esimerkiksi Makoto Shinkain työt (Your Name, Suzume) tunnetaan valon ja ympäristön hyperrealistisesta kuvauksesta.</p>
+                        
+                        <h4 class="mt-4 text-cyan">Globaalit alustat</h4>
+                        <p>Netflixin, Crunchyrollin ja Disney+:n kaltaiset palvelut ovat tehneet animesta saavutettavaa kaikkialla maailmassa yhdellä klikkauksella. Anime ei ole enää alakulttuuria, vaan osa valtavirran viihdettä, joka rikkoo katsojaennätyksiä ja vaikuttaa vahvasti esimerkiksi Hollywood-elokuvien estetiikkaan ja kerrontaan.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                        
+                        <a href="#multimedia" class="btn btn-outline-info btn-lg mt-4">Interaktiivisuus</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="multimedia" class="py-5 min-vh-100 d-flex align-items-center bg-black">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 font-weight-bold text-white">Multimedia</h2>
+                    <div class="cyan-divider mx-auto mb-3"></div>
+                    <p class="lead text-gray-light">Katso animen kehitys vuodesta 1907 nykypäivään</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="video-card p-3 p-md-4 rounded-xl shadow-lg">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="play-icon-box mr-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" stroke="white">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="h5 font-weight-bold text-white mb-0">Japanese Anime | Film Evolution (1907-2020)</h3>
+                                    <small class="text-cyan">YouTube</small>
+                                </div>
+                            </div>
+
+                            <div class="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden border border-secondary">
+                                <iframe class="embed-responsive-item" 
+                                        src="https://www.youtube.com/embed/CW5pIEzyeh0" 
+                                        allowfullscreen></iframe>
+                            </div>
+
+                            <div class="video-description mt-4 p-3 rounded">
+                                <p class="mb-0">
+                                    Tämä video esittelee japanilaisen animen hämmästyttävän matkan yli 100 vuoden ajalta. 
+                                    Näet, kuinka animaatio on kehittynyt varhaisista kokeiluista modernin aikakauden mestariteoksiksi.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-center mt-4 small text-muted">
+                            Video tarjoaa visuaalisen matkan läpi animen historian ja täydentää sivustomme sisältöä
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </div> -->
+
+    
+    <section id="interaktiivisuus" class="py-5 min-vh-100 d-flex align-items-center">
+    <div class="container text-center">
+        <h2 class="display-4 font-weight-bold text-white">Testaa tietosi ja löydä itsesi</h2>
+        <div class="cyan-divider mx-auto mb-4"></div>
+        <p class="lead mb-5">Valitse peli tai testi ja sukella syvemmälle animen maailmaan</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card game-card h-100">
+                    <div class="corner-accent top-right"></div>
+                    <div class="corner-accent bottom-left"></div>
+                    <div class="card-body d-flex flex-column align-items-center p-4">
+                        <img src="img/icon_button_4.png" alt="Icon" class="game-icon mb-4">
+                        <h3 class="h4 font-weight-bold text-white">Tunnista aikakausi</h3>
+                        <p class="flex-grow-1">Testaa taitosi tunnistaa anime-tyylit eri aikakausilta. Osaatko erottaa 60-luvun klassikon?</p>
+                        <button class="btn btn-outline-info btn-block mt-3">Pelaa</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card game-card h-100">
+                    <div class="corner-accent top-right"></div>
+                    <div class="corner-accent bottom-left"></div>
+                    <div class="card-body d-flex flex-column align-items-center p-4">
+                        <img src="img/icon_button_1.png" alt="Icon" class="game-icon mb-4">
+                        <h3 class="h4 font-weight-bold text-white">Arvaa hahmo</h3>
+                        <p class="flex-grow-1">Tunnista ikonisia anime-hahmoja pelkästään siluetin perusteella. Kuinka monta tunnistat?</p>
+                        <button class="btn btn-outline-info btn-block mt-3">Pelaa</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card game-card h-100">
+                    <div class="corner-accent top-right"></div>
+                    <div class="corner-accent bottom-left"></div>
+                    <div class="card-body d-flex flex-column align-items-center p-4">
+                        <img src="img/icon_button_3.png" alt="Icon" class="game-icon mb-4">
+                        <h3 class="h4 font-weight-bold text-white">Persoonallisuustesti</h3>
+                        <p class="flex-grow-1">Mikä anime-genre sopii juuri sinulle? Vastaa kysymyksiin ja löydä suosikkisi!</p>
+                        <button class="btn btn-outline-info btn-block mt-3">Aloita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+  
+    <section id="palaute" class="py-5 min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 font-weight-bold text-white">Mikä oli ensimmäinen animesi?</h2>
+                <div class="cyan-divider mx-auto mb-3"></div>
+                <p class="lead ">Jaa meille kokemuksesi ja kerro, mikä sarja toi sinut animen maailmaan</p>
+                
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-5 d-none d-md-block text-center">
+                    <img src="img/palaute.png" alt="Anime character" class="img-fluid drop-shadow-custom">
+                </div>
+
+                <div class="col-md-7">
+                    <form class="feedback-form p-4 p-md-5 rounded shadow">
+                        <div class="form-group">
+                            <label class="font-weight-bold">Nimi *</label>
+                            <input type="text" class="form-control" placeholder="Kirjoita nimesi" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="font-weight-bold">Sähköposti *</label>
+                            <input type="email" class="form-control" placeholder="sähköpostisi@esimerkki.fi" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="font-weight-bold">Sarjan nimi *</label>
+                            <input type="text" class="form-control" placeholder="Esim. Naruto, One Piece..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="font-weight-bold d-flex justify-content-between">
+                                <span>Arvosana sarjalle</span>
+                                <span class="text-cyan" id="ratingValue">5/10</span>
+                            </label>
+                            <input type="range" class="custom-range" min="1" max="10" value="5" id="ratingRange">
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-info btn-block btn-lg mt-4">
+                            Lähetä palaute
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer-custom border-top border-secondary">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start">
+                <div class="logo-icon-container mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </div>
+                <h3 class="h4 font-weight-bold text-white mb-0">Anime Flow</h3>
+            </div>
+
+            <div class="col-md-8 d-flex flex-wrap justify-content-center justify-content-md-end align-items-center">
+                <a href="mailto:info@animeflow.fi" class="footer-contact-link mx-3 mb-2">
+                    <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>
+                    </svg>
+                    info@animeflow.fi
+                </a>
+
+                <a href="tel:+358401234567" class="footer-contact-link mx-3 mb-2">
+                    <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    +358 40 123 4567
+                </a>
+
+                <span class="footer-contact-link mx-3 mb-2">
+                    <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Mannerheimintie 1, 00100 Helsinki
+                </span>
+            </div>
+        </div>
+
+        <div class="mt-4 pt-4 border-top border-dark text-center text-md-left">
+            <span class="footer-copy">© 2026 Anime Flow. Kaikki oikeudet pidätetään.</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    const range = document.getElementById('ratingRange');
+    const value = document.getElementById('ratingValue');
+    
+    range.addEventListener('input', () => {
+        value.textContent = `${range.value}/10`;
+    });
+
+
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const navbar = document.querySelector('.navbar-collapse');
+            if (navbar.classList.contains('show')) {
+                $('.navbar-collapse').collapse('hide');
+            }
+        });
+    });
+</script>
+</body>
+</html>

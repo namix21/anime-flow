@@ -1,0 +1,232 @@
+/* tyyli.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+    position: relative; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-simple {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/tokyo-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+.text-cyan {
+    color: #22d3ee;
+}
+
+section {
+    scroll-margin-top: 40px;
+}
+
+.era-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+}
+
+.cyan-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #22d3ee;
+    border-radius: 2px;
+}
+
+.lead-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.custom-nav {
+    background-color: rgba(30, 30, 30, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d1d5db !important;
+    transition: all 0.3s ease;
+    padding-bottom: 8px !important;
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #22d3ee !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    height: 3px;
+    background-color: #22d3ee;
+    border-radius: 2px;
+}
+
+.btn-outline-info {
+    color: #22d3ee;
+    border-color: #22d3ee;
+}
+
+.btn-outline-info:hover {
+    background-color: #22d3ee;
+    border-color: #22d3ee;
+    color: #000;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    background: rgba(34, 211, 238, 0.05) !important;
+    border-color: rgba(34, 211, 238, 0.5) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-icon {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-icon {
+    transform: scale(1.1);
+}
+
+.corner-accent {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-color: rgba(34, 211, 238, 0.3);
+    border-style: solid;
+    transition: all 0.3s ease;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    border-width: 2px 2px 0 0;
+    border-top-right-radius: 15px;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 2px 2px;
+    border-bottom-left-radius: 15px;
+}
+
+.game-card:hover .corner-accent {
+    border-color: #22d3ee;
+    width: 35px;
+    height: 35px;
+}
+
+.feedback-form {
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.feedback-form .form-control {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+    color: white;
+}
+
+.feedback-form .form-control:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 0.2rem rgba(34, 211, 238, 0.25);
+    color: white;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+    background: #333;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: #22d3ee;
+}
+
+.video-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: border-color 0.3s ease;
+}
+
+.video-card:hover {
+    border-color: rgba(34, 211, 238, 0.3);
+}
+
+.video-description {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-left: 3px solid #22d3ee;
+}
+
+.play-icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-custom {
+    background-color: #0a0a0a;
+}
+
+.footer-copy {
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+.footer-contact-link {
+    color: #e5e7eb;
+    text-decoration: none !important;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-link:hover {
+    color: #22d3ee;
+}
+
+.footer-contact-link svg {
+    color: #22d3ee;
+}
