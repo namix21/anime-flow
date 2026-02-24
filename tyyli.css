@@ -1,12 +1,33 @@
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Твой градиент и картинка */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('img/tokyo-bg_small.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Отправляем на задний план */
+    will-change: transform; /* Оптимизация для плавности */
+}
+
 body {
+    background: none; /* Убираем старый фон */
+    position: relative;
+}
+
+/* body {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
         url('img/tokyo-bg_small.jpg') no-repeat center center fixed; 
     background-size: cover;
     color: #fff;
     position: relative; 
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -81,7 +102,7 @@ section {
 
 .navbar-dark .navbar-nav .nav-link.active {
     color: #ffffff !important;
-    font-weight: 800 !important;
+    
 }
 
 .navbar-dark .navbar-nav .nav-link.active::after {
