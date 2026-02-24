@@ -13,7 +13,7 @@ html {
 .hero-simple {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('img/tokyo-bg.jpg') no-repeat center center;
+                url('img/tokyo-bg_small.jpg') no-repeat center center;
     background-size: cover;
     padding-top: 80px;
 }
