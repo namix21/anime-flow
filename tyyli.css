@@ -1,7 +1,9 @@
-/* tyyli.css */
 
 body {
-    background-color: #000;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('img/tokyo-bg_small.jpg') no-repeat center center fixed; 
+    background-size: cover;
     color: #fff;
     position: relative; 
 }
@@ -11,12 +13,19 @@ html {
 }
 
 .hero-simple {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('img/tokyo-bg_small.jpg') no-repeat center center;
-    background-size: cover;
+    min-height: 100vh;    
+    background: transparent; 
     padding-top: 80px;
+    
 }
+
+.hero-article, .col-md-6 p, .game-card{
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); 
+}
+
 
 .text-cyan {
     color: #22d3ee;
@@ -209,10 +218,6 @@ section {
     justify-content: center;
 }
 
-.footer-custom {
-    background-color: #0a0a0a;
-}
-
 .footer-copy {
     color: #9ca3af;
     font-size: 0.85rem;
@@ -249,20 +254,3 @@ section {
   }
 
 }
-/* 
-@media (max-width: 991.98px) {
-
-  .navbar-collapse {
-    text-align: right; 
-  }
-
-  .navbar-nav {
-    align-items: flex-end; 
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.2rem;      
-    padding: 0.75rem 1rem; 
-  }
-
-} */
