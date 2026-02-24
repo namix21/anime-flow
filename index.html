@@ -9,7 +9,6 @@
 </head>
 
 
-<!-- <body class="bg-black text-white"> -->
 <body class="bg-black text-white" data-spy="scroll" data-target=".navbar" data-offset="80"> <!-- 🔧 ИЗМЕНЕНИЕ: добавлен ScrollSpy -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top custom-nav">
@@ -41,82 +40,101 @@
     </nav>
 
 
-    <section id="koti" class="hero-simple d-flex align-items-center">
-    <div class="container text-center text-md-left">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <h1 class="display-2 font-weight-bold text-white">Anime Flow</h1>
-                <p class="h3 text-cyan mb-5">Sata vuotta tyyliä, tunnetta ja tarinoita</p>
+    <section id="koti" class="hero-simple d-flex align-items-center min-vh-100">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-2 font-weight-bold text-white">Anime Flow</h1>
+                    <p class="h3 text-cyan mb-5">Sata vuotta tyyliä, tunnetta ja tarinoita</p>
 
-                <div class="hero-article">
-                    <h2 class="h4 text-white font-weight-bold mb-3">Mitä on anime?</h2>
-                    <p class="lead-text text-light">
-                        Anime ei ole pelkästään "japanilaisia piirrettyjä". Se on valtava kulttuurinen kerrostuma, 
-                        jolla on oma ainutlaatuinen visuaalinen kielensä. Animen juuret ulottuvat yli sadan 
-                        vuoden taakse, ja se on kehittynyt lyhyistä paperileikkausanimaatioista 
-                        monimutkaiseen tietokone-grafiikkaan.
-                    </p>
-                    <!-- <p class="text-muted small"> -->
-                    <p class="lead-text text-light">
-                        Nykyään anime on maailmanlaajuinen ilmaisun väline, joka vaikuttaa muotiin, 
-                        elokuvataiteeseen ja miljoonien ihmisten elämäntapaan. Se käsittelee teemoja, 
-                        jotka vaihtelevat lasten seikkailuista syvällisiin filosofisiin kysymyksiin.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                    <div class="hero-article">
+                        <h2 class="h4 text-white font-weight-bold mb-3">Mitä on anime?</h2>
+                        <p class="lead-text text-light">
+                            Anime ei ole pelkästään "japanilaisia piirrettyjä". Se on valtava kulttuurinen kerrostuma, 
+                            jolla on oma ainutlaatuinen visuaalinen kielensä. Animen juuret ulottuvat yli sadan 
+                            vuoden taakse, ja se on kehittynyt lyhyistä paperileikkausanimaatioista 
+                            monimutkaiseen tietokone-grafiikkaan.
+                        </p>
                         
-                </div>
+                        <p class="lead-text text-light">
+                            Nykyään anime on maailmanlaajuinen ilmaisun väline, joka vaikuttaa muotiin, 
+                            elokuvataiteeseen ja miljoonien ihmisten elämäntapaan. Se käsittelee teemoja, 
+                            jotka vaihtelevat lasten seikkailuista syvällisiin filosofisiin kysymyksiin.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                            
+                    </div>
 
-                <a href="#aikakaudet" class="btn btn-outline-info btn-lg mt-4">Tutustu historiaan</a>
-                <!-- <a href="#era-2" class="btn btn-outline-info btn-lg mt-4">Seuraava aikakausi</a> -->
+                    <a href="#aikakaudet" class="btn btn-outline-info btn-lg mt-4">Tutustu historiaan</a>
+                
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
-    <!-- <div id="aikakaudet"> -->
-        <section id="aikakaudet" class="py-5">
+    
+        <!-- SECTION AIKAKAUDET/ERA 1 -->
+        <!-- <section id="aikakaudet" class="py-5"> -->
+        <section id="aikakaudet" class="py-5 min-vh-100 d-flex align-items-center">
             <div class="container">
-        <!-- <section class="py-5">
-            <div class="container"> -->
-                <div class="row align-items-center">
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="img/era_1.jpg" class="img-fluid rounded shadow-lg era-image" alt="Vintage Anime">
+
+                <!-- Заголовок -->
+                <div class="text-center mb-5">
+                    <span class="text-uppercase d-block">1910–1960</span>
+                    <h2 class="font-weight-bold">Syntyhetket ja "Mangan jumala"</h2>
+                    <div class="cyan-divider mx-auto"></div>
+                </div>
+
+                <!-- Контент -->
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 d-flex">
+                        <img src="img/era_1.jpg"
+                            class="img-fluid rounded shadow-lg w-100 h-100"
+                            style="object-fit: cover;"
+                            alt="Vintage Anime">
                     </div>
                     <div class="col-md-6">
-                        <span class="text-uppercase">1910–1960</span>
-                        <h2 class="mb-4 font-weight-bold">Syntyhetket ja "Mangan jumala"</h2>
-                        <div class="cyan-divider mx-auto mb-3 text-left"></div>
-                        
                         <p>Ensimmäiset kokeilut animaation parissa alkoivat Japanissa jo vuonna 1917, jolloin pioneerit kuten Shimokawa Oten loivat lyhyitä pätkiä liitutauluille ja paperille. Todellinen läpimurto tapahtui kuitenkin toisen maailmansodan jälkeen Osamu Tezukan myötä.</p>
-                        
+                            
                         <h4 class="mt-4 text-cyan">Astro Boy (Tetsuwan Atom)</h4>
                         <p>Tezuka toi animaatioon elokuvallisia keinoja, kuten lähikuvia ja dynaamisia kameran liikkeitä, jotka ovat animen tunnusmerkkejä vielä tänäkin päivänä.</p>
                         
                         <h4 class="mt-4 text-cyan">Kehitys</h4>
                         <p>Tänä aikakautena syntyivät perusteet "rajoitetulle animaatiolle" (limited animation), joka mahdollisti korkealaatuisen tarinankerronnan pienemmällä ruutunopeudella. Tämä tyyli ei ollut vain säästökeino, vaan siitä muodostui animen oma, tunnistettava estetiikka, jossa painotetaan hahmojen ilmeitä ja tunnelmaa massiivisten liikkeiden sijaan.</p>
-                       
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                        
-                        <a href="#era-2" class="btn btn-outline-info btn-lg mt-4">Seuraava: 1980–1990</a>
-                    </div>
                     
-                </div>
-            </div>
-        </section>
-
-        <section id="era-2" class="py-5">
-            <div class="container">
-                <div class="row align-items-center flex-row-reverse">
-                     <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="img/era_2.webp" class="img-fluid rounded shadow-lg era-image" alt="Cyberpunk">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>                        
                     </div>
-                    <div class="col-md-6">
-                        <span class="text-uppercase">1980–1990</span>
-                        <h2 class="mb-4 font-weight-bold">Kultakausi ja länsimaiden valloitus</h2>
+                </div>
 
-                        <!-- <h2 class="display-4 font-weight-bold text-white">Kultakausi ja länsimaiden valloitus</h2> -->
-                        <div class="cyan-divider mx-auto mb-3 text-left"></div>
-                        
+                <!-- Кнопка -->
+                <div class="text-center mt-4">
+                    <a href="#era-2" class="btn btn-outline-info btn-lg">
+                        Seuraava: 1980–1990
+                    </a>
+                </div>
+                    
+            </div>            
+        </section>
+ 
+        <!-- SECTION ERA 2 -->
+        <!-- <section id="era-2" class="py-5"> -->
+        <section id="era-2" class="py-5 min-vh-100 d-flex align-items-center">
+            <div class="container">
+
+                <!-- Заголовок -->
+                <div class="text-center mb-5">
+                    <span class="text-uppercase d-block">1980–1990</span>
+                    <h2 class="font-weight-bold">Kultakausi ja länsimaiden valloitus</h2>
+                    <div class="cyan-divider mx-auto"></div>
+                </div>
+
+                <!-- Контент -->
+                <div class="row align-items-stretch flex-row-reverse">
+                    <div class="col-md-6 d-flex">
+                        <img src="img/era_2.webp" class="img-fluid rounded shadow-lg w-100 h-100" style="object-fit: cover;" alt="Cyberpunk">
+                    </div>
+
+                    <div class="col-md-6">
                         <p>Tämä oli kokeilujen ja suurten budjettien aikaa, jolloin anime alkoi saavuttaa kansainvälistä mainetta. Japanin talouskuplan aikana studiot pystyivät tuottamaan teknisesti häikäiseviä teoksia.</p>
                         
                         <h4 class="mt-4 text-cyan">Cyberpunk и scifi</h4>
@@ -128,29 +146,37 @@
                         <h4 class="mt-4 text-cyan">Popkulttuurin nousu</h4>
                         <p>Samaan aikaan sarjat kuten Sailor Moon ja Pokémon loivat perustan globaalille fanikulttuurille. Suomessa 80-luvun lopulla julkaistu Hopeanuoli (Silver Fang) oli merkittävä virstanpylväs, joka synnytti maahamme poikkeuksellisen varhaisen ja vahvan anime-yhteisön.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                        
-                        <a href="#era-3" class="btn btn-outline-info btn-lg mt-4">Seuraava: 2000–nykyhetki</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
                     </div>
-                   
                 </div>
+
+                <!-- Кнопка -->
+                <div class="text-center mt-4">
+                    <a href="#era-3" class="btn btn-outline-info btn-lg">
+                        Seuraava: 2000–nykyhetki
+                    </a>
+                </div>    
             </div>
         </section>
 
-        <section id="era-3" class="py-5">
+        <!-- SECTION ERA 3 -->
+        <!-- <section id="era-3" class="py-5"> -->
+        <section id="era-3" class="py-5 min-vh-100 d-flex align-items-center">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="img/era_3.jpg" class="img-fluid rounded shadow-lg era-image" alt="Cyberpunk">
+
+                <!-- Заголовок -->
+                <div class="text-center mb-5">
+                    <span class="text-uppercase d-block">2000-luku – nykyhetki</span>
+                    <h2 class="font-weight-bold">Nykykausi ja suoratoiston aikakausi</h2>
+                    <div class="cyan-divider mx-auto"></div>
+                </div>
+
+                <!-- Контент -->     
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 d-flex">
+                        <img src="img/era_3.jpg" class="img-fluid rounded shadow-lg w-100 h-100 era-image" style="object-fit: cover;" alt="Cyberpunk">
                     </div>
                     <div class="col-md-6">
-                        <span class="text-uppercase">2000-luku – nykyhetki</span>
-
-                        <h2 class="mb-4 font-weight-bold">Nykykausi ja suoratoiston aikakausi</h2>
-
-                        
-                        <div class="cyan-divider mx-auto mb-3 text-left"></div>
-                        
                         <p>Nykyään anime on miljardiluokan teollisuutta, ja sen saatavuus on helpompaa kuin koskaan. Digitaalinen vallankumous on muuttanut sekä tuotantoa että kuluttamista.</p>
                         
                         <h4 class="mt-4 text-cyan">Visuaalinen loisto</h4>
@@ -159,15 +185,20 @@
                         <h4 class="mt-4 text-cyan">Globaalit alustat</h4>
                         <p>Netflixin, Crunchyrollin ja Disney+:n kaltaiset palvelut ovat tehneet animesta saavutettavaa kaikkialla maailmassa yhdellä klikkauksella. Anime ei ole enää alakulttuuria, vaan osa valtavirran viihdettä, joka rikkoo katsojaennätyksiä ja vaikuttaa vahvasti esimerkiksi Hollywood-elokuvien estetiikkaan ja kerrontaan.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                        
-                        <a href="#multimedia" class="btn btn-outline-info btn-lg mt-4">Interaktiivisuus</a>
-                    </div>
-                    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... </p>
+                    </div>                    
                 </div>
+
+                <!-- Кнопка -->
+                <div class="text-center mt-4">
+                    <a href="#multimedia" class="btn btn-outline-info btn-lg">
+                        Multimedia
+                    </a>
+                </div>  
             </div>
         </section>
 
+        <!-- SECTION MULTIMEDIA -->
         <section id="multimedia" class="py-5 min-vh-100 d-flex align-items-center bg-black">
             <div class="container">
                 <div class="text-center mb-5">
@@ -212,9 +243,9 @@
                 </div>
             </div>
         </section>
-    <!-- </div> -->
-
     
+
+    <!-- SECTION INTERAKTIIVISUUS -->
     <section id="interaktiivisuus" class="py-5 min-vh-100 d-flex align-items-center">
     <div class="container text-center">
         <h2 class="display-4 font-weight-bold text-white">Testaa tietosi ja löydä itsesi</h2>
@@ -363,14 +394,14 @@
         const range = document.getElementById('ratingRange');
         const value = document.getElementById('ratingValue');
         
-        // Обновление значения рейтинга
+        // Updating the rating value
         if (range && value) {
             range.addEventListener('input', () => {
                 value.textContent = `${range.value}/10`;
             });
         }
 
-        // Закрытие мобильного меню при клике на ссылку
+        // Close the mobile menu when clicking on a link
         document.querySelectorAll('.nav-link, .navbar-brand').forEach(link => {
             link.addEventListener('click', () => {
                 const navbar = document.querySelector('.navbar-collapse');
